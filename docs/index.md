@@ -16,4 +16,4 @@ Experimental.
 * produce - an SBOM
 * report - anything from produce, transform, and consume
 * rule - executing policies
-* transform - and SBOM into another SBOM
+* transform - one SBOM into another SBOM
