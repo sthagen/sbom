@@ -1,0 +1,2 @@
+black
+-r requirements-test.txt
