@@ -1,5 +1,5 @@
 # refactored-computing-machine
-Tree shaking for the minimal viable JSON SBOM.
+Tree shaking for the minimal viable SBOM.
 
 ## Status
 Experimental.
