@@ -11,6 +11,8 @@ CDX_TYPICAL_JSON_1_2_PATH = pathlib.Path("examples", "cyclonedx-v1.2_sbom.json")
 EMPTY_JSON_OBJECT_PATH = pathlib.Path("examples", "empty_object.json")
 
 CDX_TYPICAL_XML_1_0_PATH = pathlib.Path("examples", "cyclonedx-v1.0_sbom.xml")
+# TODO(sthagen) add test for v1.2 validation - requires the Apache 2.0 licensed v1.2 XSDs ...
+CDX_TYPICAL_XML_1_2_PATH = pathlib.Path("examples", "cyclonedx-v1.2_sbom.xml")
 
 
 def test_deps_nok_cyclone_dx_validation_of_json_empty_object(capsys):
