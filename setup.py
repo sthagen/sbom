@@ -27,6 +27,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
+    keywords="software-bill-of-materials validation cyclonedx spdx baseline extension development",
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
     install_requires=[],
