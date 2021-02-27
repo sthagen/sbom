@@ -1,4 +1,5 @@
 coverage
+hypothesis
 pytest
 pytest-coverage
 pytest-flake8
