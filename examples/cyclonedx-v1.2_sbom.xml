@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://cyclonedx.org/schema/bom/1.2 https://cyclonedx.org/schema/bom/1.2"
+     xmlns="http://cyclonedx.org/schema/bom/1.2"
+     serialNumber="urn:uuid:9d6cff96-7de9-4309-ba60-3f3819063e85" version="20210227">
+    <components>
+        <component type="library">
+            <publisher>Stefan Hagen</publisher>
+            <name>sbom</name>
+            <version>0.0.1</version>
+            <description>Tree shaking for the minimal viable SBOM.</description>
+            <hashes>
+                <hash alg="SHA-256">5a345fa5a25b4f869e9ae81fe3a1961a4fb605229df99538489a126d084bd975</hash>
+                <hash alg="MD5">0e030820099d6175c7db4865a750afeb</hash>
+                <hash alg="BLAKE2b-256">9aaa6045549146faabe1525c75e5b64751adaf70269913ba3b53ab07d897b83e</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <name>MIT</name>
+                </license>
+            </licenses>
+            <purl>pkg:pypi/sbom@0.0.1</purl>
+            <modified>false</modified>
+        </component>
+    </components>
+</bom>
