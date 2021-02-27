@@ -1,0 +1,37 @@
+{
+    "bomFormat": "CycloneDX",
+    "components": [
+        {
+            "description": "Tree shaking for the minimal viable SBOM.",
+            "hashes": [
+                {
+                    "alg": "SHA-256",
+                    "content": "5a345fa5a25b4f869e9ae81fe3a1961a4fb605229df99538489a126d084bd975"
+                },
+                {
+                    "alg": "MD5",
+                    "content": "0e030820099d6175c7db4865a750afeb"
+                },
+                {
+                    "alg": "BLAKE2b-256",
+                    "content": "9aaa6045549146faabe1525c75e5b64751adaf70269913ba3b53ab07d897b83e"
+                }
+            ],
+            "licenses": [
+                {
+                    "license": {
+                        "name": "MIT"
+                    }
+                }
+            ],
+            "modified": false,
+            "name": "sbom",
+            "publisher": "Stefan Hagen",
+            "purl": "pkg:pypi/sbom@0.0.1",
+            "type": "library",
+            "version": "0.0.1"
+        }
+    ],
+    "specVersion": "1.2",
+    "version": 1
+}
