@@ -45,3 +45,11 @@ def test_deps_nok_cyclone_dx_validation_of_typical_xml_1_0():
     with pytest.raises(xmlschema.exceptions.XMLSchemaTypeError, match=message):
         cdx.is_valid(CDX_TYPICAL_XML_1_0_PATH, False)
 
+
+def test_deps_ok_cyclone_dx_validation_of_typical_xml_1_0_patched(capsys):
+    """
+    TODO(sthagen) - remove "belt and braces" when upstream project fixes delegation
+    """
+    assert cdx.is_valid(str(CDX_TYPICAL_XML_1_0_PATH), False) is True
+    out, _ = capsys.readouterr()
+    assert not out.strip()
