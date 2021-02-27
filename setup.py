@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="sbom",
-    version="0.0.1",
+    version="0.0.2",
     description="Tree shaking for the minimal viable SBOM.",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -19,6 +19,9 @@ setup(
     author_email="stefan@hagen.link",
     license="MIT",
     classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Build Tools",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
