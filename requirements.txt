@@ -2,4 +2,5 @@ attrs
 click
 cyclonedx-bom
 jsonschema
+spdx-tools
 xmlschema
