@@ -1,0 +1,12 @@
+{
+    "bomFormat": "CycloneDX",
+    "components": [
+        {
+            "name": "sbom",
+            "type": "library",
+            "version": "0.0.1"
+        }
+    ],
+    "specVersion": "1.2",
+    "version": 20210227
+}
