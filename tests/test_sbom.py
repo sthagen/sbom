@@ -6,6 +6,7 @@ import pytest  # type: ignore
 import cyclonedx.bom.validator as cdx
 
 CDX_MVP_JSON_1_2_PATH = pathlib.Path("examples", "cyclonedx-v1.2_sbom-minimal-schema-match.json")
+CDX_TYPICAL_JSON_1_2_PATH = pathlib.Path("examples", "cyclonedx-v1.2_sbom.json")
 EMPTY_JSON_OBJECT_PATH = pathlib.Path("examples", "empty_object.json")
 
 
@@ -17,5 +18,11 @@ def test_deps_nok_cyclone_dx_validation_of_json_empty_object(capsys):
 
 def test_deps_ok_cyclone_dx_validation_of_mvp_json_1_2(capsys):
     assert cdx.is_valid(CDX_MVP_JSON_1_2_PATH, True) is True
+    out, _ = capsys.readouterr()
+    assert not out.strip()
+
+
+def test_deps_ok_cyclone_dx_validation_of_typical_json_1_2(capsys):
+    assert cdx.is_valid(CDX_TYPICAL_JSON_1_2_PATH, True) is True
     out, _ = capsys.readouterr()
     assert not out.strip()
