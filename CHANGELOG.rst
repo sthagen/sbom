@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.0.3 (2021-02-28)
+------------------
+
+* Third release on PyPI:
+    * added SWID example (TODO)
+
 0.0.2 (2021-02-27)
 ------------------
 
