@@ -30,7 +30,11 @@ setup(
     keywords="software-bill-of-materials validation cyclonedx spdx baseline extension development",
     packages=find_packages(exclude=("tests",)),
     include_package_data=True,
-    install_requires=[],
+    install_requires=[
+        "cyclonedx-bom",
+        "spdx-tools",
+        "xmlschema"
+    ],
     entry_points={
         "console_scripts": [
             "sbom=sbom.cli:main",
