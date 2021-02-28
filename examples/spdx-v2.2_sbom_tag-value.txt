@@ -23,7 +23,7 @@ PackageCopyrightText: MIT
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-sbom
 
 FileName: /sbom-0.0.1.tar.gz
-SPDXID: SPDXRef-hello-binary
+SPDXID: SPDXRef-sbom-binary
 FileType: BINARY
 FileChecksum: SHA1: 90c72fdc1eace2998a15e3762ebb606bdc783605
 FileChecksum: SHA256: f1048ddcb22af6e305a9abd861235a64bace98a32454f0c5c03547a22e4063f5
