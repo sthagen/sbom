@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 * Third release on PyPI:
+    * added abstract setup tools install requires declarations
     * added SWID example (TODO)
 
 0.0.2 (2021-02-27)
