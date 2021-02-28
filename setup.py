@@ -14,7 +14,7 @@ setup(
     description="Tree shaking for the minimal viable SBOM.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/sthagen/python-sbom",
+    url="https://github.com/sthagen/refactored-computing-machine",
     author="Stefan Hagen",
     author_email="stefan@hagen.link",
     license="MIT",
