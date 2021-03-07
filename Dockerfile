@@ -1,4 +1,5 @@
 FROM python:3.9.2-slim-buster
+LABEL maintainer="stefan@hagen.link" version="0.0.4" st.efan.hagen.vendor="Stefan Hagen" 
 RUN export DEBIAN_FRONTEND=noninteractive && \
 apt-get update && \
 apt-get -y upgrade && \
