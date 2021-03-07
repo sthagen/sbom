@@ -4,12 +4,12 @@
 import os
 import sys
 
-import sbom.lint as ag
+import sbom.sbom as lint
 
 
 # pylint: disable=expression-not-assigned
 def main(argv=None):
     """Process the job."""
     argv = sys.argv[1:] if argv is None else argv
-    ag.main(argv)
+    lint.main(argv)
  
