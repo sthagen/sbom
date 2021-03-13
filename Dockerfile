@@ -10,9 +10,9 @@ COPY requirements.txt /app
 RUN pip install --upgrade --no-cache-dir pip && pip install --no-cache-dir -r requirements.txt
 RUN useradd --create-home action
 USER action
-COPY sbom_lint /app/sbom_lint
+COPY sbom /app/sbom
 ENV PYTHONFAULTHANDLER=1
-ENTRYPOINT ["tini", "--", "python", "-m", "sbom_lint"]
+ENTRYPOINT ["tini", "--", "python", "-m", "sbom"]
 ARG BUILD_TS
 ARG REVISION
 ARG VERSION
