@@ -1,18 +1,4 @@
-
 FROM python:3.9.2-slim-buster
-LABEL org.opencontainers.image.created="2021-03-10T00:00:00Z" \
-    org.opencontainers.image.authors="Stefan Hagen <mailto:stefan@hagen.link>" \
-    org.opencontainers.image.url="https://hub.docker.com/repository/docker/shagen/sbom-lint/" \
-    org.opencontainers.image.documentation="https://sthagen.github.io/refactored-computing-machine/" \
-    org.opencontainers.image.source="https://github.com/sthagen/refactored-computing-machine/" \
-    org.opencontainers.image.version="0.0.1" \
-    org.opencontainers.image.revision="carefadecafefadecafefadecafefadecafefade" \
-    org.opencontainers.image.vendor="Stefan Hagen <mailto:stefan@hagen.link>" \
-    org.opencontainers.image.licenses="MIT License" \
-    org.opencontainers.image.ref.name="shagen/sbom-lint" \
-    org.opencontainers.image.title="Experimental SBOM envelope and body profile validator." \
-    org.opencontainers.image.description="later."
-
 RUN export DEBIAN_FRONTEND=noninteractive && \
 apt-get update && \
 apt-get -y upgrade && \
@@ -27,3 +13,18 @@ USER action
 COPY sbom_lint /app/sbom_lint
 ENV PYTHONFAULTHANDLER=1
 ENTRYPOINT ["tini", "--", "python", "-m", "sbom_lint"]
+ARG BUILD_TS
+ARG REVISION
+ARG VERSION
+LABEL org.opencontainers.image.created=$BUILD_TS \
+    org.opencontainers.image.authors="Stefan Hagen <mailto:stefan@hagen.link>" \
+    org.opencontainers.image.url="https://hub.docker.com/repository/docker/shagen/cyclonedx-lint/" \
+    org.opencontainers.image.documentation="https://sthagen.github.io/refactored-computing-machine/" \
+    org.opencontainers.image.source="https://github.com/sthagen/refactored-computing-machine/" \
+    org.opencontainers.image.version=$VERSION \
+    org.opencontainers.image.revision=$REVISION \
+    org.opencontainers.image.vendor="Stefan Hagen <mailto:stefan@hagen.link>" \
+    org.opencontainers.image.licenses="MIT License" \
+    org.opencontainers.image.ref.name="shagen/sbom-lint" \
+    org.opencontainers.image.title="sbom-lint." \
+    org.opencontainers.image.description="Experimental SBOM envelope and body profile validator."
