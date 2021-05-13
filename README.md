@@ -1,5 +1,14 @@
-# refactored-computing-machine
-Tree shaking for the minimal viable SBOM.
+# sbom
+
+[![license](https://img.shields.io/github/license/sthagen/refactored-computing-machine.svg?style=flat)](https://github.com/sthagen/refactored-computing-machine/blob/default/LICENSE)
+[![version](https://img.shields.io/pypi/v/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
+[![downloads](https://img.shields.io/pypi/dm/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
+[![wheel](https://img.shields.io/pypi/wheel/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
+[![supported-versions](https://img.shields.io/pypi/pyversions/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
+[![supported-implementations](https://img.shields.io/pypi/implementation/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
+
+
+Tree shaking for the minimal viable software bill of materials (SBOM).
 
 ## Status
 Experimental.
