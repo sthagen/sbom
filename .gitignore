@@ -131,4 +131,5 @@ dmypy.json
 # Local development artifacts
 *~
 .idea
-
+.vscode/
+local_*
