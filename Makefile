@@ -1,8 +1,8 @@
 SHELL = /bin/bash
 
 .DEFAULT_GOAL := all
-isort = isort aikasilta test
-black = black -S -l 120 --target-version py310 aikasilta test
+isort = isort sbom test
+black = black -S -l 120 --target-version py310 sbom test
 
 .PHONY: install
 install:
@@ -27,17 +27,17 @@ init:
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	flake8 aikasilta/ test/
+	flake8 sbom/ test/
 	$(isort) --check-only --df
 	$(black) --check --diff
 
 .PHONY: mypy
 mypy:
-	mypy aikasilta
+	mypy sbom
 
 .PHONY: test
 test: clean
-	pytest --asyncio-mode=strict --cov=aikasilta --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
+	pytest --asyncio-mode=strict --cov=sbom --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
 
 .PHONY: testcov
 testcov: test
