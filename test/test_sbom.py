@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pathlib
 
-import cyclonedx.bom.validator as cdx
+import cyclonedx_py.parser as cdx
 import pytest  # type: ignore
 import xmlschema
 from spdx.parsers.loggers import StandardLogger
