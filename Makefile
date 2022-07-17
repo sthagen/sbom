@@ -61,3 +61,4 @@ clean:
 	@rm -rf build
 	@rm -f *.log
 	python setup.py clean
+	@rm -fr site/*
