@@ -1,0 +1,59 @@
+site_name: SBOM
+site_description: "Tree shaking for the minimal viable software bill of materials (SBOM)."
+
+theme:
+  name: 'material'
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sthagen/sbom
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/sbom
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/shage
+
+copyright: Copyright &copy; 2022 Stefan Hagen under the MIT license
+
+repo_name: sthagen/sbom
+repo_url: https://github.com/sthagen/sbom
+edit_uri: ""
+
+plugins:
+  - search
+  - mkdocstrings
+
+nav:
+  - Introduction: 'index.md'
+  - Install: 'install.md'
+  - Usage: 'usage.md'
+  - API: 'api.md'
+  - Changes: 'changes.md'
+  - Third-Party: 'third-party/README.md'
+
+markdown_extensions:
+  - mkautodoc
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+extra_javascript:
