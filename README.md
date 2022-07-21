@@ -17,6 +17,7 @@ TODO: Third party dependencies are documented in the folder [third-party](third-
 Experimental.
 
 ## Terminology
+
 * **baseline** - mandatory elements
 * **consume** - an SBOM
 * **crypto** - hashing, signing, and signature validation
@@ -31,6 +32,7 @@ Experimental.
 * **transform** - one SBOM into another SBOM
 
 ## Safety, Security, and Data Protection Considerations
+
 The current implementation **SHALL** only digest trustworthy data.  
 
 Schema validation of JSON and XML formats requires specific measures to  
