@@ -3,4 +3,4 @@ cyclonedx-bom==3.5.0
 jsonschema==4.7.2
 spdx-tools==0.6.1
 typer==0.6.1
-xmlschema==2.0.0
+xmlschema==2.0.1
