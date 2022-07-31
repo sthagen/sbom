@@ -1,1 +1,2 @@
-include README.md LICENSE docs/index.md
+include LICENSE
+include README.md
