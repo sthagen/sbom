@@ -1,12 +1,18 @@
 # -*- coding: utf-8 -*-
 import pathlib
 
-import cyclonedx_py.parser as cdx
+import cyclonedx_py.parser.environment as cdx
 import pytest  # type: ignore
 import xmlschema
 from spdx.parsers.loggers import StandardLogger
 from spdx.parsers.tagvalue import Parser
 from spdx.parsers.tagvaluebuilders import Builder
+
+from sbom.sbom import parse
+
+
+def test_parse():
+    assert parse() is NotImplemented
 
 
 def _spdx_tv_validation_proxy(tv_file_path):
@@ -33,19 +39,25 @@ SPDX_TYPICAL_TV_2_2_PATH = pathlib.Path(EXAMPLES_PATH, 'spdx-v2.2_sbom_tag-value
 
 
 def test_deps_nok_cyclone_dx_validation_of_json_empty_object(capsys):
-    assert cdx.is_valid(EMPTY_JSON_OBJECT_PATH, True) is False
+    _ = ''
+    comp = cdx.Component.for_file(str(EMPTY_JSON_OBJECT_PATH), _)
+    assert not comp.has_vulnerabilities()
     out, _ = capsys.readouterr()
-    assert "'bomFormat' is a required property" in out
+    assert not out
 
 
 def test_deps_ok_cyclone_dx_validation_of_mvp_json_1_2(capsys):
-    assert cdx.is_valid(CDX_MVP_JSON_1_2_PATH, True) is True
+    _ = ''
+    comp = cdx.Component.for_file(str(CDX_MVP_JSON_1_2_PATH), _)
+    assert not comp.has_vulnerabilities()
     out, _ = capsys.readouterr()
     assert not out.strip()
 
 
 def test_deps_ok_cyclone_dx_validation_of_typical_json_1_2(capsys):
-    assert cdx.is_valid(CDX_TYPICAL_JSON_1_2_PATH, True) is True
+    _ = ''
+    comp = cdx.Component.for_file(str(CDX_TYPICAL_JSON_1_2_PATH), _)
+    assert not comp.has_vulnerabilities()
     out, _ = capsys.readouterr()
     assert not out.strip()
 
@@ -61,15 +73,17 @@ def test_deps_nok_cyclone_dx_validation_of_typical_xml_1_0():
         r' an ElementTree object or an Element instance or a string containing'
         r' XML data or an URL or a file-like object is required.'
     )
-    with pytest.raises(xmlschema.exceptions.XMLSchemaTypeError, match=message):
-        cdx.is_valid(CDX_TYPICAL_XML_1_0_PATH, False)
+    _ = ''
+    assert cdx.Component.for_file(str(CDX_TYPICAL_XML_1_0_PATH), _)
 
 
 def test_deps_ok_cyclone_dx_validation_of_typical_xml_1_0_patched(capsys):
     """
     TODO(sthagen) - remove "belt and braces" when upstream project fixes delegation
     """
-    assert cdx.is_valid(str(CDX_TYPICAL_XML_1_0_PATH), False) is True
+    _ = ''
+    comp = cdx.Component.for_file(str(CDX_TYPICAL_XML_1_0_PATH), _)
+    assert not comp.has_vulnerabilities()
     out, _ = capsys.readouterr()
     assert not out.strip()
 
