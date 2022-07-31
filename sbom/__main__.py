@@ -10,7 +10,7 @@ import sys
 import sbom.sbom as lint
 
 
-def main(argv=None):
+def main(argv=None) -> int:  # type: ignore
     """Process the job."""
     argv = sys.argv[1:] if argv is None else argv
-    lint.main(argv)
+    return lint.main(argv)

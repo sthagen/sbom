@@ -2,8 +2,6 @@
 import pathlib
 
 import cyclonedx_py.parser.environment as cdx
-import pytest  # type: ignore
-import xmlschema
 from spdx.parsers.loggers import StandardLogger
 from spdx.parsers.tagvalue import Parser
 from spdx.parsers.tagvaluebuilders import Builder
@@ -68,11 +66,6 @@ def test_deps_nok_cyclone_dx_validation_of_typical_xml_1_0():
       Proposal is to change from v0.4.3 behavior to better use str(path) when
       calling further upstream xmlschema.XMLSchema(schema_path).is_valid(path)
     """
-    message = (
-        r"wrong type <class 'pathlib.PosixPath'> for 'source' attribute:"
-        r' an ElementTree object or an Element instance or a string containing'
-        r' XML data or an URL or a file-like object is required.'
-    )
     _ = ''
     assert cdx.Component.for_file(str(CDX_TYPICAL_XML_1_0_PATH), _)
 
