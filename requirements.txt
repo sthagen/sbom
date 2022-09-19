@@ -1,5 +1,5 @@
 attrs==22.1.0
-cyclonedx-bom==3.5.0
+cyclonedx-bom==3.6.3
 jsonschema==4.16.0
 spdx-tools==0.6.1
 typer==0.6.1
