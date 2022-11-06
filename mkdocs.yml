@@ -3,6 +3,9 @@ site_description: "Tree shaking for the minimal viable software bill of material
 
 theme:
   name: 'material'
+  features:
+    - navigation.expand
+    - toc.integrate
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
