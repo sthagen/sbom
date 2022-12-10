@@ -3,6 +3,8 @@ site_description: "Tree shaking for the minimal viable software bill of material
 
 theme:
   name: 'material'
+  logo: assets/logo.png
+  favicon: images/favicon.ico
   features:
     - navigation.expand
     - toc.integrate
