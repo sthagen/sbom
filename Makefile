@@ -53,16 +53,16 @@ sbom:
 
 .PHONY: version
 version:
-	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" navigaattori/__init__.py
+	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" sbom/__init__.py
 
 .PHONY: secure
 secure:
-	@bandit --output current-bandit.json --baseline baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build navigaattori
+	@bandit --output current-bandit.json --baseline baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build sbom
 	@diff -Nu {baseline,current}-bandit.json; printf "^ Only the timestamps ^^ ^^ ^^ ^^ ^^ ^^ should differ. OK?\n"
 
 .PHONY: baseline
 baseline:
-	@bandit --output baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build navigaattori
+	@bandit --output baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build sbom
 	@cat baseline-bandit.json; printf "\n^ The new baseline ^^ ^^ ^^ ^^ ^^ ^^. OK?\n"
 
 .PHONY: clean
