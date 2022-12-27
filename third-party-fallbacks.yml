@@ -1,0 +1,25 @@
+---
+urls:
+  anyio: https://github.com/agronholm/anyio/blob/master/README.rst
+  idna: https://github.com/kjd/idna/blob/master/README.rst
+  jsonschema: https://github.com/python-jsonschema/jsonschema/blob/main/README.rst
+  numcodecs: https://github.com/zarr-developers/numcodecs/blob/main/README.rst
+  pandoc: https://github.com/boisgera/pandoc/blob/master/README.md
+  pyparsing: https://github.com/pyparsing/pyparsing/blob/master/README.rst
+  rtoml: https://github.com/samuelcolvin/rtoml/blob/main/README.md
+  starlette: https://github.com/encode/starlette/blob/master/README.md
+  typing-extensions: https://github.com/python/typing/blob/master/typing_extensions/README.rst
+authors:
+  aiohttp: '"aiohttp team" <team@aiohttp.org>'
+  aiosignal: '"aiohttp team" <team@aiohttp.org>'
+  frozenlist: '"aiohttp team" <team@aiohttp.org>'
+  idna: Kim Davies
+  lazr.uri: '"LAZR Developers" team'
+  msgspec: Jim Crist-Harif
+  numcodecs: Alistair Miles
+  pyparsing: Paul McGuire
+  starlette: Tom Christie
+  typing-extensions: The Python Typing Team
+  zarr: Alistair Miles
+descriptions:
+  rtoml: A better TOML library for python implemented in rust.

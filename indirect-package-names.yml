@@ -1,0 +1,20 @@
+---
+packages:
+- attrs
+- click
+- cyclonedx-python-lib
+- elementpath
+- isodate
+- packageurl-python
+- packaging
+- pip-requirements-parser
+- ply
+- pyparsing
+- pyrsistent
+- pyyaml
+- rdflib
+- setuptools
+- six
+- sortedcontainers
+- toml
+- xmltodict
