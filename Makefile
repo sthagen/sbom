@@ -1,14 +1,15 @@
 .DEFAULT_GOAL := all
-black = black -S -l 120 --target-version py310 sbom test
-lint = ruff sbom test
-pytest = pytest --asyncio-mode=strict --cov=sbom --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
-types = mypy sbom
+package = sbom
+black = black -S -l 120 --target-version py311 $(package) test
+lint = ruff $(package) test
+pytest = pytest --asyncio-mode=strict --cov=$(package) --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
+types = mypy $(package)
 
 .PHONY: install
 install:
 	pip install -U pip wheel
 	pip install -r test/requirements.txt
-	pip install -U .
+	pip install -e . --config-settings editable_mode=strict
 
 .PHONY: install-all
 install-all: install
@@ -26,7 +27,7 @@ init:
 
 .PHONY: lint
 lint:
-	python setup.py check -ms
+	validate-pyproject pyproject.toml
 	$(lint)
 	$(black) --check --diff
 
@@ -36,7 +37,7 @@ types:
 
 .PHONY: test
 test: clean
-	pytest --asyncio-mode=strict --cov=sbom --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
+	$(pytest)
 
 .PHONY: testcov
 testcov: test
@@ -53,16 +54,16 @@ sbom:
 
 .PHONY: version
 version:
-	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" sbom/__init__.py
+	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" $(package)/__init__.py
 
 .PHONY: secure
 secure:
-	@bandit --output current-bandit.json --baseline baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build sbom
+	@bandit --output current-bandit.json --baseline baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build $(package)
 	@diff -Nu {baseline,current}-bandit.json; printf "^ Only the timestamps ^^ ^^ ^^ ^^ ^^ ^^ should differ. OK?\n"
 
 .PHONY: baseline
 baseline:
-	@bandit --output baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build sbom
+	@bandit --output baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build $(package)
 	@cat baseline-bandit.json; printf "\n^ The new baseline ^^ ^^ ^^ ^^ ^^ ^^. OK?\n"
 
 .PHONY: clean
@@ -71,14 +72,9 @@ clean:
 	@rm -f `find . -type f -name '*.py[co]' `
 	@rm -f `find . -type f -name '*~' `
 	@rm -f `find . -type f -name '.*~' `
-	@rm -rf .cache
-	@rm -rf htmlcov
-	@rm -rf *.egg-info
-	@rm -f .coverage
-	@rm -f .coverage.*
-	@rm -rf build
-	@rm -f *.log
-	python setup.py clean
+	@rm -rf .cache htmlcov *.egg-info build dist/*
+	@rm -f .coverage .coverage.* *.log
+	@echo skipping not yet working pip uninstall $(package)
 	@rm -fr site/*
 
 .PHONY: name

@@ -54,9 +54,6 @@ sbom = "sbom.cli:app"
 include = ["sbom"]
 exclude = ["test*"]
 
-[bdist_wheel]
-universal = true
-
 [tool.black]
 line-length = 120
 skip-string-normalization = true
