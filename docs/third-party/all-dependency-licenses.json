@@ -108,16 +108,16 @@
     "Version": "0.10.4"
   },
   {
-    "Author": "Donald Stufft and individual contributors",
+    "Author": "UNKNOWN",
     "Description": "Core utilities for Python packages",
     "License": "Apache Software License; BSD License",
-    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/sbom-3-10-9/lib/python3.10/site-packages/packaging-21.3.dist-info/LICENSE",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/sbom-3-10-9/lib/python3.10/site-packages/packaging-22.0.dist-info/LICENSE",
     "LicenseText": "This software is made available under the terms of *either* of the licenses\nfound in LICENSE.APACHE or LICENSE.BSD. Contributions to this software is made\nunder the terms of *both* these licenses.\n",
     "Name": "packaging",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "https://github.com/pypa/packaging",
-    "Version": "21.3"
+    "URL": "UNKNOWN",
+    "Version": "22.0"
   },
   {
     "Author": "The pip authors, nexB. Inc. and others",

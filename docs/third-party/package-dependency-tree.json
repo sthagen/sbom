@@ -57,17 +57,9 @@
                     {
                         "key": "packaging",
                         "package_name": "packaging",
-                        "installed_version": "21.3",
+                        "installed_version": "22.0",
                         "required_version": "Any",
-                        "dependencies": [
-                            {
-                                "key": "pyparsing",
-                                "package_name": "pyparsing",
-                                "installed_version": "3.0.9",
-                                "required_version": ">=2.0.2,!=3.0.5",
-                                "dependencies": []
-                            }
-                        ]
+                        "dependencies": []
                     },
                     {
                         "key": "pyparsing",
