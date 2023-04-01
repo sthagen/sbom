@@ -29,11 +29,11 @@ keywords = [
 ]
 dependencies = [
     "attrs >= 22.2.0",
-    "cyclonedx-bom >= 3.10.1",
+    "cyclonedx-bom >= 3.11.0",
     "jsonschema >= 4.17.3",
-    "spdx-tools >= 0.6.1",
+    "spdx-tools >= 0.7.1",
     "typer >= 0.7.0",
-    "xmlschema >= 2.1.1",
+    "xmlschema >= 2.2.2",
 ]
 requires-python = ">=3.9"
 
