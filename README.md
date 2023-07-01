@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](docs/third-p
 [![wheel](https://img.shields.io/pypi/wheel/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/sbom.svg?style=flat)](https://git.sr.ht/~sthagen/sbom/log)
 
 ## Documentation
 
