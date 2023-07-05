@@ -15,6 +15,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.9",
     "Topic :: Software Development :: Build Tools",
 ]
@@ -33,7 +34,7 @@ dependencies = [
     "jsonschema >= 4.17.3",
     "spdx-tools >= 0.7.1",
     "typer >= 0.9.0",
-    "xmlschema >= 2.3.0",
+    "xmlschema >= 2.3.1",
 ]
 requires-python = ">=3.9"
 
