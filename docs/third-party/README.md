@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/sbom/cdx.json) with SHA256 checksum ([1fe248a7 ...](https://git.sr.ht/~sthagen/sbom/blob/default/sbom/cdx.json.sha256 "sha256:1fe248a7284863dd1856f63a9fd69d5316e0989d2da379c3ba16ac5721974d57")).
-<!--[[[end]]] (checksum: 585c36251a573e751424dcd8f7138ca8)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/sbom/cdx.json) with SHA256 checksum ([cc0d63a3 ...](https://git.sr.ht/~sthagen/sbom/blob/default/sbom/cdx.json.sha256 "sha256:cc0d63a3874573cfdee0bfb186c9cee640d610cf0badd5f55d766ea707b6b27e")).
+<!--[[[end]]] (checksum: 1c8148fe70d72d437358906430a78575)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -36,12 +36,12 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [ply](http://www.dabeaz.com/ply/)                                          | [3.11](https://pypi.org/project/ply/3.11/)                         | BSD                                  | David Beazley                               | Python Lex & Yacc                                                                                             |
 | [pyparsing](https://github.com/pyparsing/pyparsing/)                       | [3.1.1](https://pypi.org/project/pyparsing/3.1.1/)                 | MIT License                          | Paul McGuire <ptmcg.gm+pyparsing@gmail.com> | pyparsing module - Classes and methods to define and execute parsing grammars                                 |
 | [rdflib](https://github.com/RDFLib/rdflib)                                 | [7.0.0](https://pypi.org/project/rdflib/7.0.0/)                    | BSD License                          | Daniel 'eikeon' Krech                       | RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information. |
-| [setuptools](https://github.com/pypa/setuptools)                           | [68.0.0](https://pypi.org/project/setuptools/68.0.0/)              | MIT License                          | Python Packaging Authority                  | Easily download, build, install, upgrade, and uninstall Python packages                                       |
+| [setuptools](https://github.com/pypa/setuptools)                           | [68.1.0](https://pypi.org/project/setuptools/68.1.0/)              | MIT License                          | Python Packaging Authority                  | Easily download, build, install, upgrade, and uninstall Python packages                                       |
 | [six](https://github.com/benjaminp/six)                                    | [1.16.0](https://pypi.org/project/six/1.16.0/)                     | MIT License                          | Benjamin Peterson                           | Python 2 and 3 compatibility utilities                                                                        |
 | [sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/)       | [2.4.0](https://pypi.org/project/sortedcontainers/2.4.0/)          | Apache Software License              | Grant Jenks                                 | Sorted Containers -- Sorted List, Sorted Dict, Sorted Set                                                     |
 | [toml](https://github.com/uiri/toml)                                       | [0.10.2](https://pypi.org/project/toml/0.10.2/)                    | MIT License                          | William Pearson                             | Python Library for Tom's Obvious, Minimal Language                                                            |
 | [xmltodict](https://github.com/martinblech/xmltodict)                      | [0.13.0](https://pypi.org/project/xmltodict/0.13.0/)               | MIT License                          | Martin Blech                                | Makes working with XML feel like you are working with JSON                                                    |
-<!--[[[end]]] (checksum: 0848f2df2542c5d51c66c28776655fed)-->
+<!--[[[end]]] (checksum: d558c587f2acb83f58fe4b255ae63e94)-->
 
 ## Dependency Tree(s)
 
@@ -60,14 +60,14 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 cyclonedx-bom==3.11.2
 ├── cyclonedx-python-lib [required: >=2.0.0,<4.0.0, installed: 3.1.5]
 │   ├── packageurl-python [required: >=0.9, installed: 0.11.2]
-│   ├── setuptools [required: >=47.0.0, installed: 68.0.0]
+│   ├── setuptools [required: >=47.0.0, installed: 68.1.0]
 │   ├── sortedcontainers [required: >=2.4.0,<3.0.0, installed: 2.4.0]
 │   └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
 ├── packageurl-python [required: >=0.9, installed: 0.11.2]
 ├── pip-requirements-parser [required: >=32.0.0,<33.0.0, installed: 32.0.1]
 │   ├── packaging [required: Any, installed: 23.1]
 │   └── pyparsing [required: Any, installed: 3.1.1]
-├── setuptools [required: >=47.0.0, installed: 68.0.0]
+├── setuptools [required: >=47.0.0, installed: 68.1.0]
 └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
 jsonschema==4.19.0
 ├── attrs [required: >=22.2.0, installed: 23.1.0]
@@ -99,4 +99,4 @@ typer==0.9.0
 xmlschema==2.4.0
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: e9e2f4a35edaef3ba7bd7087374f82f4)-->
+<!--[[[end]]] (checksum: d562e44c62f3ebb47ee083a9394ffaee)-->
