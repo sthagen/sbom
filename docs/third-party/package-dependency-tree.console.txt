@@ -1,14 +1,14 @@
 cyclonedx-bom==3.11.2
 ├── cyclonedx-python-lib [required: >=2.0.0,<4.0.0, installed: 3.1.5]
 │   ├── packageurl-python [required: >=0.9, installed: 0.11.2]
-│   ├── setuptools [required: >=47.0.0, installed: 68.1.0]
+│   ├── setuptools [required: >=47.0.0, installed: 68.1.2]
 │   ├── sortedcontainers [required: >=2.4.0,<3.0.0, installed: 2.4.0]
 │   └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
 ├── packageurl-python [required: >=0.9, installed: 0.11.2]
 ├── pip-requirements-parser [required: >=32.0.0,<33.0.0, installed: 32.0.1]
 │   ├── packaging [required: Any, installed: 23.1]
 │   └── pyparsing [required: Any, installed: 3.1.1]
-├── setuptools [required: >=47.0.0, installed: 68.1.0]
+├── setuptools [required: >=47.0.0, installed: 68.1.2]
 └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
 jsonschema==4.19.0
 ├── attrs [required: >=22.2.0, installed: 23.1.0]

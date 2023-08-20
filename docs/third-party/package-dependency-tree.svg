@@ -69,7 +69,7 @@
 <title>setuptools</title>
 <ellipse fill="none" stroke="black" cx="925.47" cy="-127.68" rx="50.03" ry="25.81"/>
 <text text-anchor="middle" x="925.47" y="-128.63" font-family="Times,serif" font-size="14.00">setuptools</text>
-<text text-anchor="middle" x="925.47" y="-114.38" font-family="Times,serif" font-size="14.00">68.1.0</text>
+<text text-anchor="middle" x="925.47" y="-114.38" font-family="Times,serif" font-size="14.00">68.1.2</text>
 </g>
 <!-- cyclonedx&#45;bom&#45;&gt;setuptools -->
 <g id="edge4" class="edge">
