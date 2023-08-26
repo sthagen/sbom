@@ -7,7 +7,7 @@ Tree shaking for the minimal viable software bill of materials (SBOM).
 Third party dependencies are documented in the folder [third-party](third-party/README.md).
 
 [![version](https://img.shields.io/pypi/v/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
-[![downloads](https://pepy.tech/badge/sbom/month)](https://pepy.tech/project/sbom)
+[![downloads](https://static.pepy.tech/badge/sbom/month)](https://pepy.tech/project/sbom)
 [![wheel](https://img.shields.io/pypi/wheel/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
