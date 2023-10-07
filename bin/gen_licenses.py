@@ -21,7 +21,7 @@ HEADER_LABELS = ('Name', 'Version', 'License', 'Author', 'Description (from pack
 fallbacks, FALLBACK_URLS, FALLBACK_AUTHORS, FALLBACK_DESCRIPTIONS = {}, {}, {}, {}
 
 THIRD_PARTY_FALLBACKS = 'third-party-fallbacks.yml'
-TPF_PATH = pathlib.Path(THIRD_PARTY_FALLBACKS)
+TPF_PATH = pathlib.Path('etc', THIRD_PARTY_FALLBACKS)
 if TPF_PATH.is_file():
     print(f'Reading fallback values from file ({TPF_PATH})', file=sys.stderr)
     with open(TPF_PATH, 'rt', encoding=ENCODING) as handle:
@@ -38,11 +38,11 @@ if fallbacks:
 indirect_names, INDIRECT_NAMES = [], []
 
 INDIRECT_PACKAGE_NAMES = 'indirect-package-names.yml'
-IPN_PATH = pathlib.Path(INDIRECT_PACKAGE_NAMES)
+IPN_PATH = pathlib.Path('etc', INDIRECT_PACKAGE_NAMES)
 if IPN_PATH.is_file():
     print(f'Reading indirect names from file ({IPN_PATH})', file=sys.stderr)
     with open(IPN_PATH, 'rt', encoding=ENCODING) as handle:
-        indirect_names = yaml.safe_load(handle)
+        indirect_names: dict[str, list[str]] = yaml.safe_load(handle)
 
 if indirect_names:
     print(f'Indirect names from file gives map ({indirect_names})', file=sys.stderr)
@@ -73,7 +73,7 @@ def _generate_dependency_information() -> None:
     """Use pip-licenses for creation of diverse databases and graphs."""
     install_requires = _fetch_direct_dependency_names()
     tokens = set(list(string.ascii_letters + '-_.'))
-    direct_names = [''.join(c for c in term if c in tokens).strip('.') for term in install_requires]
+    direct_names = direct_names = [''.join(c for c in term if c in tokens).replace('.post', '').strip('.') for term in install_requires]
     print('Direct dependencies identified as:', file=sys.stderr)
     for d_dep in direct_names:
         print(f'- {d_dep}', file=sys.stderr)
@@ -154,10 +154,10 @@ def _extract_rows(data):
         ver_sion = f'[{ver}](https://pypi.org/project/{nam}/{ver}/)'
         lic = record['License']
         aut = record['Author']
-        if aut == 'UNKNOWN' and nam in FALLBACK_AUTHORS:
+        if (aut == 'UNKNOWN' or "b'" in aut) and nam in FALLBACK_AUTHORS:
             aut = FALLBACK_AUTHORS[nam]
         des = record['Description']
-        if des == 'UNKNOWN' and nam in FALLBACK_DESCRIPTIONS:
+        if des in ('UNKNOWN', nam) and nam in FALLBACK_DESCRIPTIONS:
             des = FALLBACK_DESCRIPTIONS[nam]
         rows.append((nam_e, ver_sion, lic, aut, des))
     rows.sort()
