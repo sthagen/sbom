@@ -1,5 +1,8 @@
 # Changes
 
+2023.10.7
+:    * Maintenance release migrating to upstream spdx-tools >= 0.8 (fixing the broken interface)
+
 2022.7.17
 :    * Maintenance release with updates in test and dev dependencies as well as type and test fixes
 
