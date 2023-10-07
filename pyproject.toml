@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sbom"
-version = "2022.7.17"
+version = "2023.10.7"
 description = "Tree shaking for the minimal viable SBOM."
 readme = "README.md"
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
