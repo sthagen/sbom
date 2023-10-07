@@ -74,7 +74,7 @@ clean:
 	@rm -f `find . -type f -name '.*~' `
 	@rm -rf .cache htmlcov *.egg-info build dist/*
 	@rm -rf .benchmarks .hypothesis .*_cache .DS_Store
-	@rm -f .coverage .coverage.* *.log
+	@rm -f .coverage .coverage.* *.log .DS_Store
 	@echo skipping not yet working pip uninstall $(package)
 	@rm -fr site/*
 
