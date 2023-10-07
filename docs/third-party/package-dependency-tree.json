@@ -21,7 +21,7 @@
                     {
                         "key": "setuptools",
                         "package_name": "setuptools",
-                        "installed_version": "68.1.2",
+                        "installed_version": "68.2.2",
                         "required_version": ">=47.0.0",
                         "dependencies": []
                     },
@@ -73,7 +73,7 @@
             {
                 "key": "setuptools",
                 "package_name": "setuptools",
-                "installed_version": "68.1.2",
+                "installed_version": "68.2.2",
                 "required_version": ">=47.0.0",
                 "dependencies": []
             },
@@ -89,8 +89,8 @@
     {
         "key": "jsonschema",
         "package_name": "jsonschema",
-        "installed_version": "4.19.0",
-        "required_version": "4.19.0",
+        "installed_version": "4.19.1",
+        "required_version": "4.19.1",
         "dependencies": [
             {
                 "key": "attrs",
@@ -163,8 +163,8 @@
     {
         "key": "spdx-tools",
         "package_name": "spdx-tools",
-        "installed_version": "0.8.0",
-        "required_version": "0.8.0",
+        "installed_version": "0.8.1",
+        "required_version": "0.8.1",
         "dependencies": [
             {
                 "key": "beartype",
@@ -287,8 +287,8 @@
     {
         "key": "xmlschema",
         "package_name": "xmlschema",
-        "installed_version": "2.4.0",
-        "required_version": "2.4.0",
+        "installed_version": "2.5.0",
+        "required_version": "2.5.0",
         "dependencies": [
             {
                 "key": "elementpath",
