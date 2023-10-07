@@ -1,13 +1,13 @@
 name: sbom
 description: Tree shaking for the minimal viable SBOM.
 license_spdx: MIT
-version: 2022.7.17
+version: 2023.10.7
 spec_version: 1.0
 home_url: https://git.sr.ht/~sthagen/sbom
 news_url: https://libraries.io/pypi/sbom/versions.atom
-date: 2022-07-17
+date: 2023-10-07
 about_resource: ./
-libraries_io_url: https://libraries.io/pypi/visailu?number=2022.7.17
+libraries_io_url: https://libraries.io/pypi/visailu?number=2022.10.7
 vcs_tool: git
 vcs_repository: https://git.sr.ht/~sthagen/sbom
 vcs_branch: default
