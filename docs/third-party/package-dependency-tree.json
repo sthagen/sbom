@@ -57,7 +57,7 @@
                     {
                         "key": "packaging",
                         "package_name": "packaging",
-                        "installed_version": "23.1",
+                        "installed_version": "23.2",
                         "required_version": "Any",
                         "dependencies": []
                     },

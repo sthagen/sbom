@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/sbom/cdx.json) with SHA256 checksum ([c5a7403c ...](https://git.sr.ht/~sthagen/sbom/blob/default/sbom/cdx.json.sha256 "sha256:c5a7403c14d5013ca928c1adec1b6c680ba78f38983760653c71dd79a040c7fc")).
-<!--[[[end]]] (checksum: ece7f5a6df483d368e206d881a71630a)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([234559a6 ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:234559a6a39870519e232de8266605efafc76e51a2b03686b687d0cfef5a7e3c")).
+<!--[[[end]]] (checksum: 146853207944676f610a26610b70223f)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -27,12 +27,12 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | Name                                                                       | Version                                                            | License                              | Author                                      | Description (from packaging data)                                                                             |
 |:---------------------------------------------------------------------------|:-------------------------------------------------------------------|:-------------------------------------|:--------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
 | [PyYAML](https://pyyaml.org/)                                              | [6.0.1](https://pypi.org/project/PyYAML/6.0.1/)                    | MIT License                          | Kirill Simonov                              | YAML parser and emitter for Python                                                                            |
-| [click](https://palletsprojects.com/p/click/)                              | [8.1.6](https://pypi.org/project/click/8.1.6/)                     | BSD License                          | UNKNOWN                                     | Composable command line interface toolkit                                                                     |
+| [click](https://palletsprojects.com/p/click/)                              | [8.1.6](https://pypi.org/project/click/8.1.6/)                     | BSD License                          | Pallets <contact@palletsprojects.com>       | Composable command line interface toolkit                                                                     |
 | [cyclonedx-python-lib](https://github.com/CycloneDX/cyclonedx-python-lib)  | [3.1.5](https://pypi.org/project/cyclonedx-python-lib/3.1.5/)      | Apache Software License              | Paul Horton                                 | A library for producing CycloneDX SBOM (Software Bill of Materials) files.                                    |
 | [elementpath](https://github.com/sissaschool/elementpath)                  | [4.1.5](https://pypi.org/project/elementpath/4.1.5/)               | MIT License                          | Davide Brunato                              | XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml                                          |
 | [isodate](https://github.com/gweis/isodate/)                               | [0.6.1](https://pypi.org/project/isodate/0.6.1/)                   | BSD License                          | Gerhard Weis                                | An ISO 8601 date/time/duration parser and formatter                                                           |
 | [packageurl-python](https://github.com/package-url/packageurl-python)      | [0.11.2](https://pypi.org/project/packageurl-python/0.11.2/)       | MIT License                          | the purl authors                            | A purl aka. Package URL parser and builder                                                                    |
-| [packaging](https://github.com/pypa/packaging)                             | [23.1](https://pypi.org/project/packaging/23.1/)                   | Apache Software License; BSD License | Donald Stufft <donald@stufft.io>            | Core utilities for Python packages                                                                            |
+| [packaging](https://github.com/pypa/packaging)                             | [23.2](https://pypi.org/project/packaging/23.2/)                   | Apache Software License; BSD License | Donald Stufft <donald@stufft.io>            | Core utilities for Python packages                                                                            |
 | [pip-requirements-parser](https://github.com/nexB/pip-requirements-parser) | [32.0.1](https://pypi.org/project/pip-requirements-parser/32.0.1/) | MIT                                  | The pip authors, nexB. Inc. and others      | pip requirements parser - a mostly correct pip requirements parsing library because it uses pip's own code.   |
 | [ply](http://www.dabeaz.com/ply/)                                          | [3.11](https://pypi.org/project/ply/3.11/)                         | BSD                                  | David Beazley                               | Python Lex & Yacc                                                                                             |
 | [pyparsing](https://github.com/pyparsing/pyparsing/)                       | [3.1.1](https://pypi.org/project/pyparsing/3.1.1/)                 | MIT License                          | Paul McGuire <ptmcg.gm+pyparsing@gmail.com> | pyparsing module - Classes and methods to define and execute parsing grammars                                 |
@@ -42,7 +42,7 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/)       | [2.4.0](https://pypi.org/project/sortedcontainers/2.4.0/)          | Apache Software License              | Grant Jenks                                 | Sorted Containers -- Sorted List, Sorted Dict, Sorted Set                                                     |
 | [toml](https://github.com/uiri/toml)                                       | [0.10.2](https://pypi.org/project/toml/0.10.2/)                    | MIT License                          | William Pearson                             | Python Library for Tom's Obvious, Minimal Language                                                            |
 | [xmltodict](https://github.com/martinblech/xmltodict)                      | [0.13.0](https://pypi.org/project/xmltodict/0.13.0/)               | MIT License                          | Martin Blech                                | Makes working with XML feel like you are working with JSON                                                    |
-<!--[[[end]]] (checksum: 723542af47c3c6c1f74d766081211d44)-->
+<!--[[[end]]] (checksum: 2f13070d5bffc3e7cb5bdd424077b8ff)-->
 
 ## Dependency Tree(s)
 
@@ -66,7 +66,7 @@ cyclonedx-bom==3.11.2
 │   └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
 ├── packageurl-python [required: >=0.9, installed: 0.11.2]
 ├── pip-requirements-parser [required: >=32.0.0,<33.0.0, installed: 32.0.1]
-│   ├── packaging [required: Any, installed: 23.1]
+│   ├── packaging [required: Any, installed: 23.2]
 │   └── pyparsing [required: Any, installed: 3.1.1]
 ├── setuptools [required: >=47.0.0, installed: 68.2.2]
 └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
@@ -100,4 +100,4 @@ typer==0.9.0
 xmlschema==2.5.0
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: 019ccc81ae529abc4732457afc6261f9)-->
+<!--[[[end]]] (checksum: 66bc21495e9985296f3faacfdeed2906)-->
