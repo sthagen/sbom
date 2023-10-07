@@ -1,7 +1,0 @@
-Dockerfile
-.dockerignore
-.git
-.idea
-*~
-venv/
-**/__pycache/
