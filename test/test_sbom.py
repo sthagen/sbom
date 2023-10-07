@@ -2,9 +2,7 @@
 import pathlib
 
 import cyclonedx_py.parser.environment as cdx
-from spdx.parsers.loggers import StandardLogger
-from spdx.parsers.tagvalue import Parser
-from spdx.parsers.tagvaluebuilders import Builder
+from spdx_tools.spdx.parser.parse_anything import parse_file as parse_spdx_file
 
 from sbom.sbom import parse
 
@@ -15,12 +13,11 @@ def test_parse():
 
 def _spdx_tv_validation_proxy(tv_file_path):
     """YAGNI"""
-    p = Parser(Builder(), StandardLogger())
-    p.build()
-    with open(tv_file_path) as f:
-        data = f.read()
-        document, error = p.parse(data)
-        return False if error else True
+    try:
+        _ = parse_spdx_file(tv_file_path)
+        return True
+    except:
+        return False
 
 
 EXAMPLES_PATH = pathlib.Path('examples')
@@ -83,13 +80,5 @@ def test_deps_ok_cyclone_dx_validation_of_typical_xml_1_0_patched(capsys):
 
 def test_deps_ok_spdx_validation_of_typical_tv_2_2(capsys):
     assert _spdx_tv_validation_proxy(SPDX_TYPICAL_TV_2_2_PATH) is False  # Cf. SPDX TODO above
-    gibberish = (
-        'true\n'
-        'Package copyright text must be free form text, line: 21\n'
-        'Found unknown tag : Relationship at line: 23\n'
-        "FileChecksum must be a single line of text starting with 'SHA1:', line:29\n"
-        "FileChecksum must be a single line of text starting with 'SHA1:', line:30\n"
-        'FileCopyrightText must be one of NOASSERTION, NONE or free form text, line: 33'
-    )
     out, _ = capsys.readouterr()
-    assert out.strip() == gibberish
+    assert out.strip() == ''
