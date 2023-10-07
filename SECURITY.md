@@ -6,8 +6,8 @@ Versions of sbom currently being supported with security updates.
 
 | Version(s)  | Supported |
 |:------------|:----------|
-| 2022.7.17   | yes       |
-| < 2022.7.17 | no        |
+| 2023.10.7   | yes       |
+| < 2023.10.7 | no        |
 
 ## Reporting a Vulnerability
 
