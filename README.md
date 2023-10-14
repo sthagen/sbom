@@ -3,7 +3,8 @@
 Tree shaking for the minimal viable software bill of materials (SBOM).
 
 [License: MIT](https://github.com/sthagen/sbom/blob/default/LICENSE) | 
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/sbom/tree/default/item/COUNTRY-OF-ORIGIN)
+[Country of origin: Switzerland](https://git.sr.ht/~sthagen/sbom/tree/default/item/COUNTRY-OF-ORIGIN) | 
+[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/sbom/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
