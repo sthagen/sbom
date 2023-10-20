@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([6a942885 ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:6a942885c53c18c440b4ce47c75d9df75d2baed17fde8d4b9d2a514b9a02e1be")).
-<!--[[[end]]] (checksum: aa02784b69b89a714713347eb8b267c6)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([e4bec19d ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:e4bec19d794e45b45e781bf49ce675192eb916541fb4730487d9e379cf7861ba")).
+<!--[[[end]]] (checksum: 09883055c741fdccaa1429bcabe7e6f9)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -13,13 +13,13 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | Name                                                                   | Version                                                  | License                 | Author                                     | Description (from packaging data)                                  |
 |:-----------------------------------------------------------------------|:---------------------------------------------------------|:------------------------|:-------------------------------------------|:-------------------------------------------------------------------|
 | [attrs](https://www.attrs.org/en/stable/changelog.html)                | [23.1.0](https://pypi.org/project/attrs/23.1.0/)         | MIT License             | Hynek Schlawack <hs@ox.cx>                 | Classes Without Boilerplate                                        |
-| [cyclonedx-bom](https://github.com/CycloneDX/cyclonedx-python/#readme) | [3.11.2](https://pypi.org/project/cyclonedx-bom/3.11.2/) | Apache Software License | Steven Springett                           | CycloneDX Software Bill of Materials (SBOM) generation utility     |
+| [cyclonedx-bom](https://github.com/CycloneDX/cyclonedx-python/#readme) | [3.11.5](https://pypi.org/project/cyclonedx-bom/3.11.5/) | Apache Software License | Steven Springett                           | CycloneDX Software Bill of Materials (SBOM) generation utility     |
 | [jsonschema](https://github.com/python-jsonschema/jsonschema)          | [4.19.1](https://pypi.org/project/jsonschema/4.19.1/)    | MIT License             | Julian Berman                              | An implementation of JSON Schema validation for Python             |
 | [referencing](https://github.com/python-jsonschema/referencing)        | [0.30.2](https://pypi.org/project/referencing/0.30.2/)   | MIT License             | Julian Berman                              | JSON Referencing + Python                                          |
-| [spdx-tools](https://github.com/spdx/tools-python)                     | [0.8.1](https://pypi.org/project/spdx-tools/0.8.1/)      | Apache Software License | "Ahmed H. Ismail" <ahm3d.hisham@gmail.com> | SPDX parser and tools.                                             |
+| [spdx-tools](https://github.com/spdx/tools-python)                     | [0.8.2](https://pypi.org/project/spdx-tools/0.8.2/)      | Apache Software License | "Ahmed H. Ismail" <ahm3d.hisham@gmail.com> | SPDX parser and tools.                                             |
 | [typer](https://github.com/tiangolo/typer)                             | [0.9.0](https://pypi.org/project/typer/0.9.0/)           | MIT License             | Sebastián Ramírez                          | Typer, build great CLIs. Easy to code. Based on Python type hints. |
 | [xmlschema](https://github.com/sissaschool/xmlschema)                  | [2.5.0](https://pypi.org/project/xmlschema/2.5.0/)       | MIT License             | Davide Brunato                             | An XML Schema validator and decoder                                |
-<!--[[[end]]] (checksum: edc84daef11676b4aa52152f026b30a5)-->
+<!--[[[end]]] (checksum: 59fdba7fc8c3e804a3421a3500e2a791)-->
 
 ### Indirect Dependencies
 
@@ -58,7 +58,8 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
-cyclonedx-bom==3.11.2
+cyclonedx-bom==3.11.5
+├── chardet [required: >=5.0,<6.0, installed: 5.2.0]
 ├── cyclonedx-python-lib [required: >=2.0.0,<4.0.0, installed: 3.1.5]
 │   ├── packageurl-python [required: >=0.9, installed: 0.11.2]
 │   ├── setuptools [required: >=47.0.0, installed: 68.2.2]
@@ -80,7 +81,7 @@ jsonschema==4.19.1
 │   ├── attrs [required: >=22.2.0, installed: 23.1.0]
 │   └── rpds-py [required: >=0.7.0, installed: 0.9.2]
 └── rpds-py [required: >=0.7.1, installed: 0.9.2]
-spdx-tools==0.8.1
+spdx-tools==0.8.2
 ├── beartype [required: Any, installed: 0.15.0]
 ├── click [required: Any, installed: 8.1.6]
 ├── license-expression [required: Any, installed: 30.1.1]
@@ -100,4 +101,4 @@ typer==0.9.0
 xmlschema==2.5.0
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: 66bc21495e9985296f3faacfdeed2906)-->
+<!--[[[end]]] (checksum: 5ac913d5a8fb983a16de816b152da44e)-->

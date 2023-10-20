@@ -2,9 +2,16 @@
     {
         "key": "cyclonedx-bom",
         "package_name": "cyclonedx-bom",
-        "installed_version": "3.11.2",
-        "required_version": "3.11.2",
+        "installed_version": "3.11.5",
+        "required_version": "3.11.5",
         "dependencies": [
+            {
+                "key": "chardet",
+                "package_name": "chardet",
+                "installed_version": "5.2.0",
+                "required_version": ">=5.0,<6.0",
+                "dependencies": []
+            },
             {
                 "key": "cyclonedx-python-lib",
                 "package_name": "cyclonedx-python-lib",
@@ -163,8 +170,8 @@
     {
         "key": "spdx-tools",
         "package_name": "spdx-tools",
-        "installed_version": "0.8.1",
-        "required_version": "0.8.1",
+        "installed_version": "0.8.2",
+        "required_version": "0.8.2",
         "dependencies": [
             {
                 "key": "beartype",
