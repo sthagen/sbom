@@ -39,7 +39,7 @@ if you are a sourcehut user by selecting "Prepare a patchset" on the summary pag
 
 ## Support
 
-Please kindly submit issues at https://todo.sr.ht/~sthagen/sbom or write plain text email to ~sthagen/sbom@lists.sr.ht to submit patches and request support. Thanks.
+Please kindly submit issues at <https://todo.sr.ht/~sthagen/sbom> or write plain text email to ~sthagen/sbom@lists.sr.ht to submit patches and request support. Thanks.
 
 ## Terminology
 
