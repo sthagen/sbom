@@ -8,7 +8,7 @@ Tree shaking for the minimal viable software bill of materials (SBOM).
 [![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
 [![Version](https://img.shields.io/pypi/v/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
-[![Downloads](https://static.pepy.tech/badge/sbom/month)](https://pepy.tech/project/sbom)
+[![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/sbom)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/sbom.svg?style=flat)](https://pypi.python.org/pypi/sbom/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/sbom/log)
 
