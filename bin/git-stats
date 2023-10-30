@@ -1,0 +1,38 @@
+#! /usr/bin/env python3
+"""Fetch average commits / year of all times from local git repository."""
+import datetime as dti
+import json
+import sys
+
+from git import Repo
+
+ENCODING = 'utf-8'
+
+
+def main() -> int:
+    """Fetch average commits / year oof all times from local git repository."""
+    repo = Repo('.')
+    commits = repo.iter_commits()
+    times = []
+    first_ts = None
+    for count, commit in enumerate(commits, start=1):
+        committed = dti.datetime.fromtimestamp(commit.committed_date, dti.timezone.utc)
+        committed_at = committed.isoformat('T')
+        if first_ts is None:
+            first_ts = committed
+        last_ts = committed
+        times.append(committed_at)
+
+    total = len(times)
+
+    month_span_td = first_ts - last_ts
+    year_span = month_span_td.days / 365
+    commits_per_year = int(total / year_span)
+    print(f'{commits_per_year} commits per year')
+
+    with open('etc/yearly-commits.json', 'wt', encoding=ENCODING) as handle:
+        json.dump({'commits_per_year': commits_per_year}, handle, indent=2)
+
+
+if __name__ == '__main__':
+    sys.exit(main())
