@@ -44,7 +44,7 @@ digraph {
 	jsonschema -> "rpds-py" [label=">=0.7.1"]
 	jsonschema -> attrs [label=">=22.2.0"]
 	jsonschema -> referencing [label=">=0.28.4"]
-	jsonschema [label="jsonschema\n4.19.1"]
+	jsonschema [label="jsonschema\n4.19.2"]
 	packaging [label="packaging\n23.2"]
 	ply [label="ply\n3.11"]
 	pyparsing [label="pyparsing\n3.1.1"]
