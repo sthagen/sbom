@@ -90,3 +90,7 @@ dlstats:
 	pypistats python_minor --json --monthly $(package) > etc/monthly-downloads.json
 	rq '$$.data..*.downloads' etc/monthly-downloads.json | paste -sd+ - | bc
 	jq . etc/monthly-downloads.json > etc/tempaway && mv etc/tempaway etc/monthly-downloads.json
+
+.PHONY: gitstats
+gitstats:
+	bin/git-stats
