@@ -133,3 +133,4 @@ dmypy.json
 .idea
 .vscode/
 local_*
+book
