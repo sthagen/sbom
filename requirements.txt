@@ -1,6 +1,6 @@
 attrs==23.1.0
 cyclonedx-bom==3.11.5
-jsonschema==4.19.1
+jsonschema==4.19.2
 referencing==0.30.2
 spdx-tools==0.8.2
 typer==0.9.0
