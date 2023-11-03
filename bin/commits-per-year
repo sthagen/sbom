@@ -41,7 +41,7 @@ PARAMS = {
   },
   5: {
     'S_WIDTH': 134.1,
-    'R_FG_WIDTH': 123,
+    'R_FG_WIDTH': 450,
     'R_BG_WIDTH': 1341,
     'TEXT_LENGTH': 350,
   },
