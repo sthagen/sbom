@@ -2,8 +2,8 @@
     {
         "key": "cyclonedx-bom",
         "package_name": "cyclonedx-bom",
-        "installed_version": "3.11.5",
-        "required_version": "3.11.5",
+        "installed_version": "3.11.7",
+        "required_version": "3.11.7",
         "dependencies": [
             {
                 "key": "chardet",

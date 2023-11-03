@@ -21,7 +21,7 @@
     "NoticeFile": "/Users/ruth/.pyenv/versions/3.10.12/envs/sbom-3-10-12/lib/python3.10/site-packages/NOTICE",
     "NoticeText": "CycloneDX Python\nCopyright (c) OWASP Foundation\n\nThis product includes software developed by the\nCycloneDX community (https://cyclonedx.org/).\n",
     "URL": "https://github.com/CycloneDX/cyclonedx-python/#readme",
-    "Version": "3.11.5"
+    "Version": "3.11.7"
   },
   {
     "Author": "Julian Berman",

@@ -6,7 +6,7 @@ digraph {
 	"cyclonedx-bom" -> chardet [label=">=5.0,<6.0"]
 	"cyclonedx-bom" -> setuptools [label=">=47.0.0"]
 	"cyclonedx-bom" -> toml [label=">=0.10.0,<0.11.0"]
-	"cyclonedx-bom" [label="cyclonedx-bom\n3.11.5"]
+	"cyclonedx-bom" [label="cyclonedx-bom\n3.11.7"]
 	"cyclonedx-python-lib" -> "packageurl-python" [label=">=0.9"]
 	"cyclonedx-python-lib" -> setuptools [label=">=47.0.0"]
 	"cyclonedx-python-lib" -> sortedcontainers [label=">=2.4.0,<3.0.0"]
