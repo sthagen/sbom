@@ -38,7 +38,7 @@
     {
       "category": "3.11",
       "date": "2023-05",
-      "downloads": 7
+      "downloads": 6
     },
     {
       "category": "3.11",
@@ -93,7 +93,7 @@
     {
       "category": "3.8",
       "date": "2023-05",
-      "downloads": 8
+      "downloads": 7
     },
     {
       "category": "3.8",
@@ -189,6 +189,11 @@
       "category": "null",
       "date": "2023-10",
       "downloads": 96
+    },
+    {
+      "category": "null",
+      "date": "2023-11",
+      "downloads": 1
     }
   ],
   "package": "sbom",
