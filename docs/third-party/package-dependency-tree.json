@@ -115,7 +115,7 @@
                     {
                         "key": "referencing",
                         "package_name": "referencing",
-                        "installed_version": "0.30.2",
+                        "installed_version": "0.31.0",
                         "required_version": ">=0.28.0",
                         "dependencies": [
                             {
@@ -139,7 +139,7 @@
             {
                 "key": "referencing",
                 "package_name": "referencing",
-                "installed_version": "0.30.2",
+                "installed_version": "0.31.0",
                 "required_version": ">=0.28.4",
                 "dependencies": [
                     {

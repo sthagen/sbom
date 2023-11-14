@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([d7e2dfa8 ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:d7e2dfa8eb925cea759b6c47d22dfb65c689380f38b5eb50598a3736d21fc9fe")).
-<!--[[[end]]] (checksum: fd147c0fc28a26224d7b9596d6f58ef2)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([1f65ee72 ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:1f65ee72ff64730f0e8a45a4b3a508e11a9d5b73f7c9635f0f1678870200a79a")).
+<!--[[[end]]] (checksum: 0112f236471c3871b04aa34f84f4e286)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -15,11 +15,11 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [attrs](https://www.attrs.org/en/stable/changelog.html)                | [23.1.0](https://pypi.org/project/attrs/23.1.0/)         | MIT License             | Hynek Schlawack <hs@ox.cx>                 | Classes Without Boilerplate                                        |
 | [cyclonedx-bom](https://github.com/CycloneDX/cyclonedx-python/#readme) | [3.11.7](https://pypi.org/project/cyclonedx-bom/3.11.7/) | Apache Software License | Steven Springett                           | CycloneDX Software Bill of Materials (SBOM) generation utility     |
 | [jsonschema](https://github.com/python-jsonschema/jsonschema)          | [4.19.2](https://pypi.org/project/jsonschema/4.19.2/)    | MIT License             | Julian Berman                              | An implementation of JSON Schema validation for Python             |
-| [referencing](https://github.com/python-jsonschema/referencing)        | [0.30.2](https://pypi.org/project/referencing/0.30.2/)   | MIT License             | Julian Berman                              | JSON Referencing + Python                                          |
+| [referencing](https://github.com/python-jsonschema/referencing)        | [0.31.0](https://pypi.org/project/referencing/0.31.0/)   | MIT License             | Julian Berman                              | JSON Referencing + Python                                          |
 | [spdx-tools](https://github.com/spdx/tools-python)                     | [0.8.2](https://pypi.org/project/spdx-tools/0.8.2/)      | Apache Software License | "Ahmed H. Ismail" <ahm3d.hisham@gmail.com> | SPDX parser and tools.                                             |
 | [typer](https://github.com/tiangolo/typer)                             | [0.9.0](https://pypi.org/project/typer/0.9.0/)           | MIT License             | Sebastián Ramírez                          | Typer, build great CLIs. Easy to code. Based on Python type hints. |
 | [xmlschema](https://github.com/sissaschool/xmlschema)                  | [2.5.0](https://pypi.org/project/xmlschema/2.5.0/)       | MIT License             | Davide Brunato                             | An XML Schema validator and decoder                                |
-<!--[[[end]]] (checksum: ff66fcf01edb6612b8710027cfbfae2b)-->
+<!--[[[end]]] (checksum: 69b150d7f4c22e444de4628813a00bbd)-->
 
 ### Indirect Dependencies
 
@@ -74,10 +74,10 @@ cyclonedx-bom==3.11.7
 jsonschema==4.19.2
 ├── attrs [required: >=22.2.0, installed: 23.1.0]
 ├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.7.1]
-│   └── referencing [required: >=0.28.0, installed: 0.30.2]
+│   └── referencing [required: >=0.28.0, installed: 0.31.0]
 │       ├── attrs [required: >=22.2.0, installed: 23.1.0]
 │       └── rpds-py [required: >=0.7.0, installed: 0.9.2]
-├── referencing [required: >=0.28.4, installed: 0.30.2]
+├── referencing [required: >=0.28.4, installed: 0.31.0]
 │   ├── attrs [required: >=22.2.0, installed: 23.1.0]
 │   └── rpds-py [required: >=0.7.0, installed: 0.9.2]
 └── rpds-py [required: >=0.7.1, installed: 0.9.2]
@@ -101,4 +101,4 @@ typer==0.9.0
 xmlschema==2.5.0
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: 0c93169bc2c493558e18f4971812e92a)-->
+<!--[[[end]]] (checksum: cb9ff9cd33ca30dbbfb54a92bfcbba41)-->

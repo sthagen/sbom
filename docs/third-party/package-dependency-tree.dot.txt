@@ -54,7 +54,7 @@ digraph {
 	rdflib [label="rdflib\n7.0.0"]
 	referencing -> "rpds-py" [label=">=0.7.0"]
 	referencing -> attrs [label=">=22.2.0"]
-	referencing [label="referencing\n0.30.2"]
+	referencing [label="referencing\n0.31.0"]
 	setuptools [label="setuptools\n68.2.2"]
 	six [label="six\n1.16.0"]
 	sortedcontainers [label="sortedcontainers\n2.4.0"]
