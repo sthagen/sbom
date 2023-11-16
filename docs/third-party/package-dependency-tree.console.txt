@@ -11,7 +11,7 @@ cyclonedx-bom==3.11.7
 │   └── pyparsing [required: Any, installed: 3.1.1]
 ├── setuptools [required: >=47.0.0, installed: 68.2.2]
 └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
-jsonschema==4.19.2
+jsonschema==4.20.0
 ├── attrs [required: >=22.2.0, installed: 23.1.0]
 ├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.7.1]
 │   └── referencing [required: >=0.28.0, installed: 0.31.0]

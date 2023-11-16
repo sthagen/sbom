@@ -174,7 +174,7 @@
 <title>jsonschema</title>
 <ellipse fill="none" stroke="black" cx="227.72" cy="-360.44" rx="56.39" ry="28.99"/>
 <text text-anchor="middle" x="227.72" y="-363.64" font-family="Times,serif" font-size="14.00">jsonschema</text>
-<text text-anchor="middle" x="227.72" y="-347.14" font-family="Times,serif" font-size="14.00">4.19.2</text>
+<text text-anchor="middle" x="227.72" y="-347.14" font-family="Times,serif" font-size="14.00">4.20.0</text>
 </g>
 <!-- jsonschema&#45;&gt;attrs -->
 <g id="edge13" class="edge">
