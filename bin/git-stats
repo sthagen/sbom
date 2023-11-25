@@ -23,6 +23,7 @@ def main() -> int:
     repo = Repo('.')
     commits = repo.iter_commits()
     times = []
+    # TODO remove the name confusion first is first in commits but last in time
     first_ts = None
     collector = {}
     for commit in commits:
@@ -84,8 +85,8 @@ def main() -> int:
     git_stats = {
         'total': {
             'commits': total,
-            'first_committed_at': first_ts.isoformat('T'),
-            'last_committed_at': last_ts.isoformat('T'),
+            'first_committed_at': last_ts.isoformat('T'),
+            'last_committed_at': first_ts.isoformat('T'),
             'month_span_day_count': month_span_td.days,
             'year_span': year_span,
             'commits_per_year': commits_per_year,
