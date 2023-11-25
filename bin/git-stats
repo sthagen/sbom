@@ -67,6 +67,14 @@ def main() -> int:
 
     for ts_key, stats in collector.items():
         day_key = ts_key.split('T')[0]
+        if day_key not in daily:
+            daily[day_key] = {
+                'commits': 0,
+                'insertions': 0,
+                'deletions': 0,
+                'lines': 0,
+                'files': 0,
+            }
         daily[day_key]['commits'] += 1
         daily[day_key]['insertions'] += stats['insertions']
         daily[day_key]['deletions'] += stats['deletions']
