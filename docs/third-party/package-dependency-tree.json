@@ -28,7 +28,7 @@
                     {
                         "key": "setuptools",
                         "package_name": "setuptools",
-                        "installed_version": "68.2.2",
+                        "installed_version": "69.0.2",
                         "required_version": ">=47.0.0",
                         "dependencies": []
                     },
@@ -80,7 +80,7 @@
             {
                 "key": "setuptools",
                 "package_name": "setuptools",
-                "installed_version": "68.2.2",
+                "installed_version": "69.0.2",
                 "required_version": ">=47.0.0",
                 "dependencies": []
             },
@@ -115,7 +115,7 @@
                     {
                         "key": "referencing",
                         "package_name": "referencing",
-                        "installed_version": "0.31.0",
+                        "installed_version": "0.31.1",
                         "required_version": ">=0.28.0",
                         "dependencies": [
                             {
@@ -139,7 +139,7 @@
             {
                 "key": "referencing",
                 "package_name": "referencing",
-                "installed_version": "0.31.0",
+                "installed_version": "0.31.1",
                 "required_version": ">=0.28.4",
                 "dependencies": [
                     {
