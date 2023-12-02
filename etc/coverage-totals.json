@@ -1,0 +1,18 @@
+{
+  "sbom": {
+    "version": "7.3.2",
+    "timestamp": "2023-12-02T15:33:23.049460",
+    "branch_coverage": true,
+    "show_contexts": true,
+    "covered_lines": 5,
+    "num_statements": 6,
+    "percent_covered": 87.5,
+    "percent_covered_display": "87.50",
+    "missing_lines": 1,
+    "excluded_lines": 0,
+    "num_branches": 2,
+    "num_partial_branches": 0,
+    "covered_branches": 2,
+    "missing_branches": 0
+  }
+}
