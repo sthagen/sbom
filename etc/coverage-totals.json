@@ -1,7 +1,7 @@
 {
   "sbom": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:33:23.049460",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 16:29:57 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 5,
@@ -13,6 +13,34 @@
     "num_branches": 2,
     "num_partial_branches": 0,
     "covered_branches": 2,
-    "missing_branches": 0
+    "missing_branches": 0,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 15,
+    "files": [
+      "sbom/__init__.py",
+      "sbom/baseline.py",
+      "sbom/cli.py",
+      "sbom/consume.py",
+      "sbom/crypto.py",
+      "sbom/extension.py",
+      "sbom/fuzz.py",
+      "sbom/merge.py",
+      "sbom/mock.py",
+      "sbom/policy.py",
+      "sbom/produce.py",
+      "sbom/report.py",
+      "sbom/rule.py",
+      "sbom/sbom.py",
+      "sbom/transform.py"
+    ],
+    "blake3": "87e87762a6a37832a0523b6585e4e9e319e56d87d2e53254fba0f713425d9f6e",
+    "blake2": "69911f91939db12c0693e45b4bcd83d6b27f39dd6a1542a1854fab4ab0b20b88677b5c75f92b03fa1efbb91730641f784b788faa737c569891ac62accf6abc92",
+    "sha512": "2c54e9488f837be75416b7bb5dba9fb5edb9617fc9f8dea4028b576ca6d2ede993724e1e161d41ea161e017d07e90e6f481d39c7ba987dda3ad04d2ab21d9070",
+    "sha384": "83a4598109ae4e3ec3a41a8ebd95c66a458271d8abc6a6e9a975a9fd73e459f570eb0bc184ae1e17561f3f4fcb809b2a",
+    "sha256": "7c0ec9c6ebb64f375e4d2aa633c33a663d8f713ef2cbe302e1a006568c3ef797",
+    "sha1": "abbf6be7e9d132f2d62ef8fa08ad56434bf42ccd",
+    "md5": "e8c76081da70afc0cc61d93a80431902",
+    "python_version": "3.10.12",
+    "entropy": 4.835751
   }
 }
