@@ -6,148 +6,34 @@ succ="+ found "
 fail="- did not find "
 problem=false
 
-tool="jq"; message="json query / path implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
+declare -A pairs=(
+    [jq]="json query / path implementation"
+    [tr]="translate characters implementation"
+    [b2sum]="blake2 hashing implementation"
+    [b3sum]="blake3 hashing implementation"
+    [sha512sum]="sha512sum hashing implementation"
+    [sha384sum]="sha384sum hashing implementation"
+    [sha256sum]="sha256sum hashing implementation"
+    [sha1sum]="sha1 hashing implementation"
+    [md5sum]="md5 hashing implementation"
+    [ent]="entropy (shannon max is 8 bits per byte) calculator implementation"
+    [cut]="cut out selected portions of each line of a file implementation"
+    [wc]="word count implementatiom for line count"
+    [sed]="stream editor implementation"
+)
 
-tool="tr"; message="translate characters implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="b2sum"; message="blake2 hashing implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="b3sum"; message="blake2 hashing implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="sha512sum"; message="sha512 hashing implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="sha384sum"; message="sha384 hashing implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="sha256sum"; message="sha256 hashing implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="sha1sum"; message="sha1 hashing implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="md5sum"; message="md5 hashing implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="ent"; message="entropy (shannon max is 8 bits per byte) calculator implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="cut"; message="cut out selected portions of each line of a file implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="wc"; message="word count implementatiom for line count (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
-
-tool="sed"; message="stream editor implementation (${tool})"
-if report="$(type "${tool}" 2>&1)" 
-then 
-    printf "%s%s\n" "${succ}" "${message}"
-    printf "  -> %s\n" "${report}"
-else 
-    printf "%s%s\n" "${fail}" "${message}"
-    printf "  -> %s\n" "${report}"
-    problem=true
-fi
+for tool in "${!pairs[@]}"; do
+    message="${pairs[$tool]} (${tool})"
+    if report="$(type "${tool}" 2>&1)" 
+    then 
+        printf "%s%s\n" "${succ}" "${message}"
+        printf "  -> %s\n" "${report}"
+    else 
+        printf "%s%s\n" "${fail}" "${message}"
+        printf "  -> %s\n" "${report}"
+        problem=true
+    fi
+done
 
 if $problem
 then
