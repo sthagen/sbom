@@ -3,7 +3,7 @@
     {
       "category": "3.10",
       "date": "2023-06",
-      "downloads": 59
+      "downloads": 54
     },
     {
       "category": "3.10",
@@ -33,12 +33,12 @@
     {
       "category": "3.10",
       "date": "2023-12",
-      "downloads": 67
+      "downloads": 75
     },
     {
       "category": "3.11",
       "date": "2023-06",
-      "downloads": 17
+      "downloads": 14
     },
     {
       "category": "3.11",
@@ -68,7 +68,7 @@
     {
       "category": "3.11",
       "date": "2023-12",
-      "downloads": 64
+      "downloads": 72
     },
     {
       "category": "3.3",
@@ -78,6 +78,11 @@
     {
       "category": "3.3",
       "date": "2023-10",
+      "downloads": 4
+    },
+    {
+      "category": "3.3",
+      "date": "2023-12",
       "downloads": 4
     },
     {
@@ -98,7 +103,7 @@
     {
       "category": "3.8",
       "date": "2023-06",
-      "downloads": 24
+      "downloads": 19
     },
     {
       "category": "3.8",
@@ -128,12 +133,12 @@
     {
       "category": "3.8",
       "date": "2023-12",
-      "downloads": 32
+      "downloads": 36
     },
     {
       "category": "3.9",
       "date": "2023-06",
-      "downloads": 25
+      "downloads": 20
     },
     {
       "category": "3.9",
@@ -193,7 +198,7 @@
     {
       "category": "null",
       "date": "2023-12",
-      "downloads": 11
+      "downloads": 12
     }
   ],
   "package": "sbom",
