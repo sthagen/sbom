@@ -64,6 +64,6 @@ digraph {
 	typer [label="typer\n0.9.0"]
 	uritools [label="uritools\n4.0.1"]
 	xmlschema -> elementpath [label=">=4.1.5,<5.0.0"]
-	xmlschema [label="xmlschema\n2.5.0"]
+	xmlschema [label="xmlschema\n2.5.1"]
 	xmltodict [label="xmltodict\n0.13.0"]
 }

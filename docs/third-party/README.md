@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([c0f703cb ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:c0f703cb9b2476e3942eeafdd463bb91d61cc9ba4dbb1ece12e33a4bb8d24063")).
-<!--[[[end]]] (checksum: a488e71505450a3ecb5d26755f264fd3)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([94e39819 ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:94e398191ae083146f89dc47bc6dc4f8e22356ecff91959fd076107cb6cee8db")).
+<!--[[[end]]] (checksum: 5ec17ca048329e435eca8ca842ab7c9c)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -18,8 +18,8 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [referencing](https://github.com/python-jsonschema/referencing)        | [0.32.0](https://pypi.org/project/referencing/0.32.0/)   | MIT License             | Julian Berman                              | JSON Referencing + Python                                          |
 | [spdx-tools](https://github.com/spdx/tools-python)                     | [0.8.2](https://pypi.org/project/spdx-tools/0.8.2/)      | Apache Software License | "Ahmed H. Ismail" <ahm3d.hisham@gmail.com> | SPDX parser and tools.                                             |
 | [typer](https://github.com/tiangolo/typer)                             | [0.9.0](https://pypi.org/project/typer/0.9.0/)           | MIT License             | Sebastián Ramírez                          | Typer, build great CLIs. Easy to code. Based on Python type hints. |
-| [xmlschema](https://github.com/sissaschool/xmlschema)                  | [2.5.0](https://pypi.org/project/xmlschema/2.5.0/)       | MIT License             | Davide Brunato                             | An XML Schema validator and decoder                                |
-<!--[[[end]]] (checksum: 3439a5ec89fbd4fa768a4bca56edb7ef)-->
+| [xmlschema](https://github.com/sissaschool/xmlschema)                  | [2.5.1](https://pypi.org/project/xmlschema/2.5.1/)       | MIT License             | Davide Brunato                             | An XML Schema validator and decoder                                |
+<!--[[[end]]] (checksum: b95faa0876d0c31792ef37bb3de01bc8)-->
 
 ### Indirect Dependencies
 
@@ -98,7 +98,7 @@ spdx-tools==0.8.2
 typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.6]
 └── typing-extensions [required: >=3.7.4.3, installed: 4.7.1]
-xmlschema==2.5.0
+xmlschema==2.5.1
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: ccf3ec995808e51d64f6ad78c0702b55)-->
+<!--[[[end]]] (checksum: 5f20831c95cade800dae2421a084641c)-->
