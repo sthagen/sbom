@@ -1,4 +1,4 @@
-attrs==23.1.0
+attrs==23.2.0
 cyclonedx-bom==3.11.7
 jsonschema==4.20.0
 referencing==0.32.0
