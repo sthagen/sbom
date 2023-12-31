@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([94e39819 ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:94e398191ae083146f89dc47bc6dc4f8e22356ecff91959fd076107cb6cee8db")).
-<!--[[[end]]] (checksum: 5ec17ca048329e435eca8ca842ab7c9c)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([a90f0b77 ...](https://git.sr.ht/~sthagen/sbom/blob/default/etc/sbom/cdx.json.sha256 "sha256:a90f0b77327e294f6eff193af656934c71beabe2e71d659883950a32a05c682a")).
+<!--[[[end]]] (checksum: d09156710218dac262efe8e3d55044fd)-->
 ## Licenses 
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -12,14 +12,14 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 <!--[[[fill direct_dependencies_table()]]]-->
 | Name                                                                   | Version                                                  | License                 | Author                                     | Description (from packaging data)                                  |
 |:-----------------------------------------------------------------------|:---------------------------------------------------------|:------------------------|:-------------------------------------------|:-------------------------------------------------------------------|
-| [attrs](https://www.attrs.org/en/stable/changelog.html)                | [23.1.0](https://pypi.org/project/attrs/23.1.0/)         | MIT License             | Hynek Schlawack <hs@ox.cx>                 | Classes Without Boilerplate                                        |
+| [attrs](https://www.attrs.org/en/stable/changelog.html)                | [23.2.0](https://pypi.org/project/attrs/23.2.0/)         | MIT License             | Hynek Schlawack <hs@ox.cx>                 | Classes Without Boilerplate                                        |
 | [cyclonedx-bom](https://github.com/CycloneDX/cyclonedx-python/#readme) | [3.11.7](https://pypi.org/project/cyclonedx-bom/3.11.7/) | Apache Software License | Steven Springett                           | CycloneDX Software Bill of Materials (SBOM) generation utility     |
 | [jsonschema](https://github.com/python-jsonschema/jsonschema)          | [4.20.0](https://pypi.org/project/jsonschema/4.20.0/)    | MIT License             | Julian Berman                              | An implementation of JSON Schema validation for Python             |
 | [referencing](https://github.com/python-jsonschema/referencing)        | [0.32.0](https://pypi.org/project/referencing/0.32.0/)   | MIT License             | Julian Berman                              | JSON Referencing + Python                                          |
 | [spdx-tools](https://github.com/spdx/tools-python)                     | [0.8.2](https://pypi.org/project/spdx-tools/0.8.2/)      | Apache Software License | "Ahmed H. Ismail" <ahm3d.hisham@gmail.com> | SPDX parser and tools.                                             |
 | [typer](https://github.com/tiangolo/typer)                             | [0.9.0](https://pypi.org/project/typer/0.9.0/)           | MIT License             | Sebastián Ramírez                          | Typer, build great CLIs. Easy to code. Based on Python type hints. |
 | [xmlschema](https://github.com/sissaschool/xmlschema)                  | [2.5.1](https://pypi.org/project/xmlschema/2.5.1/)       | MIT License             | Davide Brunato                             | An XML Schema validator and decoder                                |
-<!--[[[end]]] (checksum: b95faa0876d0c31792ef37bb3de01bc8)-->
+<!--[[[end]]] (checksum: 72e248d7d9f087a8eaecfc6f7c8582ac)-->
 
 ### Indirect Dependencies
 
@@ -37,12 +37,12 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [ply](http://www.dabeaz.com/ply/)                                          | [3.11](https://pypi.org/project/ply/3.11/)                         | BSD                                  | David Beazley                               | Python Lex & Yacc                                                                                             |
 | [pyparsing](https://github.com/pyparsing/pyparsing/)                       | [3.1.1](https://pypi.org/project/pyparsing/3.1.1/)                 | MIT License                          | Paul McGuire <ptmcg.gm+pyparsing@gmail.com> | pyparsing module - Classes and methods to define and execute parsing grammars                                 |
 | [rdflib](https://github.com/RDFLib/rdflib)                                 | [7.0.0](https://pypi.org/project/rdflib/7.0.0/)                    | BSD License                          | Daniel 'eikeon' Krech                       | RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information. |
-| [setuptools](https://github.com/pypa/setuptools)                           | [69.0.2](https://pypi.org/project/setuptools/69.0.2/)              | MIT License                          | Python Packaging Authority                  | Easily download, build, install, upgrade, and uninstall Python packages                                       |
+| [setuptools](https://github.com/pypa/setuptools)                           | [69.0.3](https://pypi.org/project/setuptools/69.0.3/)              | MIT License                          | Python Packaging Authority                  | Easily download, build, install, upgrade, and uninstall Python packages                                       |
 | [six](https://github.com/benjaminp/six)                                    | [1.16.0](https://pypi.org/project/six/1.16.0/)                     | MIT License                          | Benjamin Peterson                           | Python 2 and 3 compatibility utilities                                                                        |
 | [sortedcontainers](http://www.grantjenks.com/docs/sortedcontainers/)       | [2.4.0](https://pypi.org/project/sortedcontainers/2.4.0/)          | Apache Software License              | Grant Jenks                                 | Sorted Containers -- Sorted List, Sorted Dict, Sorted Set                                                     |
 | [toml](https://github.com/uiri/toml)                                       | [0.10.2](https://pypi.org/project/toml/0.10.2/)                    | MIT License                          | William Pearson                             | Python Library for Tom's Obvious, Minimal Language                                                            |
 | [xmltodict](https://github.com/martinblech/xmltodict)                      | [0.13.0](https://pypi.org/project/xmltodict/0.13.0/)               | MIT License                          | Martin Blech                                | Makes working with XML feel like you are working with JSON                                                    |
-<!--[[[end]]] (checksum: d0e6de64ae8a9d2b27a4449cc787733e)-->
+<!--[[[end]]] (checksum: 1c803e78bae836755c7d68669ef07def)-->
 
 ## Dependency Tree(s)
 
@@ -62,23 +62,23 @@ cyclonedx-bom==3.11.7
 ├── chardet [required: >=5.0,<6.0, installed: 5.2.0]
 ├── cyclonedx-python-lib [required: >=2.0.0,<4.0.0, installed: 3.1.5]
 │   ├── packageurl-python [required: >=0.9, installed: 0.11.2]
-│   ├── setuptools [required: >=47.0.0, installed: 69.0.2]
+│   ├── setuptools [required: >=47.0.0, installed: 69.0.3]
 │   ├── sortedcontainers [required: >=2.4.0,<3.0.0, installed: 2.4.0]
 │   └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
 ├── packageurl-python [required: >=0.9, installed: 0.11.2]
 ├── pip-requirements-parser [required: >=32.0.0,<33.0.0, installed: 32.0.1]
 │   ├── packaging [required: Any, installed: 23.2]
 │   └── pyparsing [required: Any, installed: 3.1.1]
-├── setuptools [required: >=47.0.0, installed: 69.0.2]
+├── setuptools [required: >=47.0.0, installed: 69.0.3]
 └── toml [required: >=0.10.0,<0.11.0, installed: 0.10.2]
 jsonschema==4.20.0
-├── attrs [required: >=22.2.0, installed: 23.1.0]
+├── attrs [required: >=22.2.0, installed: 23.2.0]
 ├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.7.1]
 │   └── referencing [required: >=0.28.0, installed: 0.32.0]
-│       ├── attrs [required: >=22.2.0, installed: 23.1.0]
+│       ├── attrs [required: >=22.2.0, installed: 23.2.0]
 │       └── rpds-py [required: >=0.7.0, installed: 0.9.2]
 ├── referencing [required: >=0.28.4, installed: 0.32.0]
-│   ├── attrs [required: >=22.2.0, installed: 23.1.0]
+│   ├── attrs [required: >=22.2.0, installed: 23.2.0]
 │   └── rpds-py [required: >=0.7.0, installed: 0.9.2]
 └── rpds-py [required: >=0.7.1, installed: 0.9.2]
 spdx-tools==0.8.2
@@ -101,4 +101,4 @@ typer==0.9.0
 xmlschema==2.5.1
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: 5f20831c95cade800dae2421a084641c)-->
+<!--[[[end]]] (checksum: f80b1096e129ed74433c09b7aeabdf9a)-->

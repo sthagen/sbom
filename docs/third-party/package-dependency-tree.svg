@@ -13,7 +13,7 @@
 <title>attrs</title>
 <ellipse fill="none" stroke="black" cx="104.72" cy="-28.99" rx="35.71" ry="28.99"/>
 <text text-anchor="middle" x="104.72" y="-32.19" font-family="Times,serif" font-size="14.00">attrs</text>
-<text text-anchor="middle" x="104.72" y="-15.69" font-family="Times,serif" font-size="14.00">23.1.0</text>
+<text text-anchor="middle" x="104.72" y="-15.69" font-family="Times,serif" font-size="14.00">23.2.0</text>
 </g>
 <!-- cyclonedx&#45;bom -->
 <g id="node2" class="node">
@@ -83,7 +83,7 @@
 <title>setuptools</title>
 <ellipse fill="none" stroke="black" cx="929.72" cy="-139.47" rx="50.03" ry="28.99"/>
 <text text-anchor="middle" x="929.72" y="-142.67" font-family="Times,serif" font-size="14.00">setuptools</text>
-<text text-anchor="middle" x="929.72" y="-126.17" font-family="Times,serif" font-size="14.00">69.0.2</text>
+<text text-anchor="middle" x="929.72" y="-126.17" font-family="Times,serif" font-size="14.00">69.0.3</text>
 </g>
 <!-- cyclonedx&#45;bom&#45;&gt;setuptools -->
 <g id="edge5" class="edge">
