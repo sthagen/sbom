@@ -38,5 +38,5 @@ spdx-tools==0.8.2
 typer==0.9.0
 ├── click [required: >=7.1.1,<9.0.0, installed: 8.1.6]
 └── typing-extensions [required: >=3.7.4.3, installed: 4.7.1]
-xmlschema==2.5.1
+xmlschema==3.0.0
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
