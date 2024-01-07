@@ -4,4 +4,4 @@ jsonschema==4.20.0
 referencing==0.32.1
 spdx-tools==0.8.2
 typer==0.9.0
-xmlschema==2.5.1
+xmlschema==3.0.0
