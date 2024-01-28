@@ -7,6 +7,7 @@ name = "sbom"
 version = "2023.10.7"
 description = "Tree shaking for the minimal viable SBOM."
 readme = "README.md"
+license = {file = "LICENSE"}
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 maintainers = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 classifiers = [
