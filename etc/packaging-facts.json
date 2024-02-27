@@ -22,6 +22,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "",
     "keywords": "baseline,cyclonedx,developer-tools,extension,software-bill-of-materials,spdx,validation",
     "license": "",
@@ -38,6 +39,7 @@
       "Source-Code": "https://git.sr.ht/~sthagen/sbom",
       "Test-Coverage": "https://codes.dilettant.life/coverage/sbom"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/sbom/2023.10.7/",
     "requires_dist": [
       "attrs >=23.1.0",
