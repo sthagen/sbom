@@ -43,7 +43,7 @@
     {
       "category": "3.10",
       "date": "2024-04",
-      "downloads": 161
+      "downloads": 169
     },
     {
       "category": "3.11",
@@ -78,7 +78,7 @@
     {
       "category": "3.11",
       "date": "2024-04",
-      "downloads": 164
+      "downloads": 172
     },
     {
       "category": "3.12",
@@ -98,7 +98,7 @@
     {
       "category": "3.12",
       "date": "2024-04",
-      "downloads": 160
+      "downloads": 168
     },
     {
       "category": "3.3",
@@ -163,7 +163,7 @@
     {
       "category": "3.8",
       "date": "2024-04",
-      "downloads": 162
+      "downloads": 170
     },
     {
       "category": "3.9",
@@ -223,7 +223,7 @@
     {
       "category": "null",
       "date": "2024-04",
-      "downloads": 15
+      "downloads": 20
     }
   ],
   "package": "sbom",
