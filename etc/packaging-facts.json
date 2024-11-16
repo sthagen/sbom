@@ -26,6 +26,8 @@
     "home_page": "",
     "keywords": "baseline,cyclonedx,developer-tools,extension,software-bill-of-materials,spdx,validation",
     "license": "",
+    "license_expression": null,
+    "license_files": null,
     "maintainer": "",
     "maintainer_email": "Stefan Hagen <stefan@hagen.link>",
     "name": "sbom",
