@@ -1,7 +1,7 @@
-attrs==25.4.0
-cyclonedx-bom==7.2.1
-jsonschema==4.25.1
+attrs==26.1.0
+cyclonedx-bom==7.3.0
+jsonschema==4.26.0
 referencing==0.37.0
-spdx-tools==0.8.3
-typer==0.20.0
-xmlschema==4.2.0
+spdx-tools==0.8.5
+typer==0.24.1
+xmlschema==4.3.1
